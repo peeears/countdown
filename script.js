@@ -8,11 +8,12 @@ console.log("Hello, world!");
 var timeleft = 99;
 
 var downloadTimer = setInterval(function(){
-  if(timeleft <= 0){
+  if(timeleft = 0){
     clearInterval(downloadTimer);
     document.getElementById("number").innerHTML = "0";
   } else {
     document.getElementById("number").innerHTML = timeleft + " seconds remaining";
   }
   timeleft -= 1;
-}, 1000);
+}
+                           , 1000);

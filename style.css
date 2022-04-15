@@ -33,12 +33,6 @@ video {
   position: fixed;
   font-size: 30rem;
   z-index:100;
-  -webkit-animation: blink 2s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation: blink 2s;
-    -moz-animation-iteration-count: infinite;
-    -o-animation: blink 2s;
-    -o-animation-iteration-count: infinite;
 }
 
 
@@ -75,6 +69,7 @@ video {
         opacity: 1;
     }
 }
+
 #hand {
   position: fixed;
   top:50%;
