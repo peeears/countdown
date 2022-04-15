@@ -8,9 +8,8 @@ console.log("Hello, world!");
 var countdown = document.getElementById("countdown");
 var options = document.querySelectorAll(".option");
 var image = document.querySelector("#img");
-var number=document.querySelector(".number");
+var number = document.querySelector(".number");
 var downloadTimer;
-
 
 function reset() {
   var timeleft = 10;
@@ -31,7 +30,6 @@ function reset() {
 }
 
 reset();
-
 
 countdown.addEventListener("change", function () {
   var countdownval = this.value;
@@ -75,22 +73,20 @@ countdown.addEventListener("change", function () {
   //     image.src =
   //       "https://cdn.glitch.global/693438a2-770f-48f5-8219-74763b09679b/ae-count-03.png?v=1649993902587";
   // }
-  if (countdownval==0){
-    // clearInterval(downloadTimer);
-     image.src =
-        "https://cdn.glitch.global/693438a2-770f-48f5-8219-74763b09679b/ae-count-02.png?v=1649993891510";
-    number.style.color="orange"
-  }
-  else if(countdownval==1){
-    
-  }
-  else if(countdownval==11){
-    // clearInterval(downloadTimer);
-    // reset();
-    // console.log("11");
-      image.src =
-        "https://cdn.glitch.global/693438a2-770f-48f5-8219-74763b09679b/ae-count-03.png?v=1649993902587";
-    number.style.color="lightgray"
+  if (countdownval == 0) {
+    clearInterval(downloadTimer);
+    reset();
+    image.src =
+      "https://cdn.glitch.global/693438a2-770f-48f5-8219-74763b09679b/ae-count-02.png?v=1649993891510";
+    number.style.color = "#FD6701";
+  } else if (countdownval == 1) {
+  } else if (countdownval == 11) {
+    clearInterval(downloadTimer);
+    reset();
+    console.log("11");
+    image.src =
+      "https://cdn.glitch.global/693438a2-770f-48f5-8219-74763b09679b/ae-count-03.png?v=1649993902587";
+    number.style.color = "lightgray";
   }
   
 });
