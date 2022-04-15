@@ -27,8 +27,8 @@ video {
 .number{
   font-family: Arial, sans-serif;
   color: #FD6701;
-/*   top:0%;
-  left:0%; */
+  top:-55%;
+  left:45%;
 /*   transform: translate(-25%, -25%); */
   position: fixed;
   font-size: 30rem;
@@ -73,7 +73,7 @@ video {
   position: fixed;
   top:50%;
   left:50%;
-  transform: translate(-90%, -50%);
+  transform: translate(-95%, -40%);
     -webkit-animation: blink 1s;
     -webkit-animation-iteration-count: infinite;
     -moz-animation: blink s;
