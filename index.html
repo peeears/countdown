@@ -14,17 +14,30 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <!-- this is the start of content -->
-    <h1>
-      Hello World!
-    </h1>
-    <p>
-      This starter gives you everything you need to start working on a new
-      website, and nothing more. If you're looking for something a little more
-      opinionated, try remixing
-      <a href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-        >~glitch-hello-website</a
-      >.
-    </p>
+    <!-- HTML goes here -->
+<!--     <label for="days">Choose a day</label> -->
+
+    <select name="countdown" id="countdown">
+      <option value="0">Traffic lights</option>
+      <option value="1">Youtube Advertisement</option>
+      <option value="2">Old TV</option>
+      <option value="3">Self Destruct</option>
+      <option value="4">Google Timer</option>
+      <option value="5">Cooking Counter</option>
+      <option value="6">Product Launch</option>
+      <option value="7">Timed Bombs</option>
+      <option value="8">Basketball Shot Clock </option>
+      <option value="9">Product Launch</option>
+      <option value="10">Product Launch</option>
+    </select>
+
+    <h1 class="message"></h1>
+
+    <!-- Scripts go at the bottom of your <body> element, below your HTML.
+      Here's a link to the jquery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- And here's a link to our javascript, written in an external js file called main.js -->
+    <script src="main.js"></script>
   </body>
 </html>
