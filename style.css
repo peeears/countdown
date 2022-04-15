@@ -28,11 +28,17 @@ video {
   font-family: Arial, sans-serif;
   color: #FD6701;
   top:-55%;
-  left:45%;
+  left:42%;
 /*   transform: translate(-25%, -25%); */
   position: fixed;
   font-size: 30rem;
   z-index:100;
+  -webkit-animation: blink 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 2s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 2s;
+    -o-animation-iteration-count: infinite;
 }
 
 
@@ -73,10 +79,10 @@ video {
   position: fixed;
   top:50%;
   left:50%;
-  transform: translate(-95%, -40%);
+  transform: translate(-100%, -40%);
     -webkit-animation: blink 1s;
     -webkit-animation-iteration-count: infinite;
-    -moz-animation: blink s;
+    -moz-animation: blink 1s;
     -moz-animation-iteration-count: infinite;
     -o-animation: blink 1s;
     -o-animation-iteration-count: infinite;
