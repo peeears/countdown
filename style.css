@@ -82,3 +82,16 @@ video {
     -o-animation: blink 1s;
     -o-animation-iteration-count: infinite;
 }
+
+#walk {
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-100%, -40%);
+    -webkit-animation: blink 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1s;
+    -o-animation-iteration-count: infinite;
+}

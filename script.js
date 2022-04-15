@@ -12,11 +12,9 @@ function reset() {
       clearInterval(downloadTimer);
       document.getElementById("number").innerHTML = "0";
       document.addEventListener("click", function () {
-        timeleft = 3;
         reset();
         // console.log("clicked");
       });
-      // timeleft=100;
     } else {
       document.getElementById("number").innerHTML =
         timeleft + " seconds remaining";
