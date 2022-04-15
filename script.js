@@ -25,3 +25,15 @@ function reset() {
 
 reset();
 
+
+var countdown = document.getElementById("countdown");
+
+var options=document.getElementsByTagName("option") ;
+options.forEach(function(option) 
+
+  option.addEventListener('click', function() {
+    var countdownval = this.value;
+  console.log(countdownval)
+    // document.getElementById('comment-form-' + postId).style.display = 'block'
+  })
+}))
