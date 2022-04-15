@@ -24,12 +24,6 @@ video {
   height: auto;
 }
 
-#hand{
-  position: fixed;
-  top:50%;
-  left:50%;
-  transform: translate(-90%, -50%);
-}
 
 @-webkit-keyframes blink {
     0% {
@@ -64,8 +58,11 @@ video {
         opacity: 1;
     }
 }
-
-img {
+#hand {
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-90%, -50%);
     -webkit-animation: blink 1s;
     -webkit-animation-iteration-count: infinite;
     -moz-animation: blink 1s;
