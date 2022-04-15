@@ -8,9 +8,10 @@ console.log("Hello, world!");
 var timeleft = 99;
 
 var downloadTimer = setInterval(function(){
-  if(timeleft = 0){
-    clearInterval(downloadTimer);
+    if(timeleft == 0){
+    // clearInterval(downloadTimer);
     document.getElementById("number").innerHTML = "0";
+      timeleft=100;
   } else {
     document.getElementById("number").innerHTML = timeleft + " seconds remaining";
   }
