@@ -18,6 +18,7 @@ function reset() {
       clearInterval(downloadTimer);
       document.getElementById("number").innerHTML = "0";
       number.addEventListener("click", function () {
+        clearInterval(downloadTimer);
         reset();
         // console.log("clicked");
       });
