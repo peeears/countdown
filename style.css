@@ -65,7 +65,7 @@ video {
   transform: translate(-90%, -50%);
     -webkit-animation: blink 1s;
     -webkit-animation-iteration-count: infinite;
-    -moz-animation: blink 1s;
+    -moz-animation: blink s;
     -moz-animation-iteration-count: infinite;
     -o-animation: blink 1s;
     -o-animation-iteration-count: infinite;
