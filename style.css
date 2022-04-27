@@ -15,6 +15,7 @@ body {
   margin: 1rem;
   font-family: sans-serif;
   line-height: 1.5;
+  background-color: black;
 }
 
 /* images and videos max out at full width */
@@ -33,6 +34,19 @@ video {
   position: fixed;
   font-size: 30rem;
   z-index:100;
+}
+
+.num{
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+    
+.num:hover + .hide {
+  display: block;
+  color: white;
 }
 
 
