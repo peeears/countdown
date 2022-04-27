@@ -36,6 +36,11 @@ video {
   z-index:100;
 }
 
+#10{
+  color: white;
+  text-decoration: none;
+}
+
 .num{
   color: white;
 }
