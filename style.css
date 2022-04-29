@@ -87,6 +87,7 @@ a:visited {
 .esc {
   display:none;
   color: white;
+/*    color: black; */
   position: fixed;
   padding: 0.5rem;
   left: 10px;

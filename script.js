@@ -9,9 +9,13 @@ let randomY;
 
 
 $( ".num" ).click(function(e) {
+  randomX=Math.floor((Math.random() * $(window).width()) + 1);
+  randomY=Math.floor((Math.random() * $(window).height()) + 1);
   e.preventDefault();
   let index=$(this).children("a").attr("id");
    // console.log(srclist[index]);
+  $(".esc").css({ top: randomY+"px" ,left:randomX+"px"});
+  console.log(randomX,randomY);
   $(".esc").fadeIn(2000);
   $(".vd").attr('src', srclist[index]);
   $(".backgroundVD").fadeIn();
