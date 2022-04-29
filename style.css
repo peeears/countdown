@@ -88,10 +88,12 @@ a:visited {
   display:none;
   color: white;
   position: fixed;
-  padding: 0.5rem;
+  padding: 1rem;
   left: 0;
   top: 0;
   z-index:1000;
+  border-radius: 5px;
+  border: 2px solid #000000;
 }
 
 @-webkit-keyframes blink {

@@ -21,13 +21,11 @@ $( ".num" ).click(function(e) {
     $(".backgroundVD").fadeOut();
      $(".esc").hide();
   }) 
-  $(window).keypress(function( event ) {
-  if ( event.keyCode == "27" ) {
-    console.log("esc")
-     event.preventDefault();
+  $(document).keyup(function(e) {
+     if (e.key === "Escape") { // escape key maps to keycode `27`
+       event.preventDefault();
     $(".backgroundVD").fadeOut();
      $(".esc").hide();
-  }
+    }
 });
 });
-
