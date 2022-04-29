@@ -92,7 +92,7 @@ a:visited {
   left: 0;
   top: 0;
   z-index:1000;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 2px solid #000000;
 }
 
