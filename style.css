@@ -20,6 +20,11 @@ body {
 }
 
 /* images and videos max out at full width */
+.backgroundVD{
+  width:100%;
+  display:none;
+}
+
 img,
 video {
    max-width: 70%;
