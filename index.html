@@ -11,10 +11,10 @@
     <title>Counting Down</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- HTML goes here -->
@@ -59,6 +59,18 @@
     </div>
 
     <div class="esc">escape</div>
+
+    <!-- <audio controls autoplay style="visibility: hidden">
+      <source src="countdownVD/clock.m4a" type="audio/ogg" />
+      <source src="countdownVD/clock.m4a" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio> -->
+
+    <audio class="audio" hidden loop>
+      <source src="countdownVD/clock.m4a" type="audio/ogg" />
+      <source src="countdownVD/clock.m4a" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
 
     <!--     <select name="countdown" id="countdown">
       <option class="option" value="0">Pedestrian Signal</option>
