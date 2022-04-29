@@ -11,7 +11,7 @@ let srclist = [
   "countdownVD/path.mp4",
   "countdownVD/walk_2.mp4",
   "countdownVD/space.mp4",
-  "8",
+  "countdownVD/self.mp4",
   "9",
   "countdownVD/bomb.mp4",
 ];
