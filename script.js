@@ -9,10 +9,25 @@ $( ".num" ).click(function(e) {
   e.preventDefault();
   let index=$(this).children("a").attr("id");
    // console.log(srclist[index]);
+  $(".esc").fadeIn(2000);
   $(".vd").attr('src', srclist[index]);
   $(".backgroundVD").fadeIn();
   $('video').on('ended',function(){
       $(".backgroundVD").fadeOut();
+     $(".esc").hide();
     });
+  $(".esc").click(function(event){
+     event.preventDefault();
+    $(".backgroundVD").fadeOut();
+     $(".esc").hide();
+  }) 
+  $(window).keypress(function( event ) {
+  if ( event.keyCode == "27" ) {
+    console.log("esc")
+     event.preventDefault();
+    $(".backgroundVD").fadeOut();
+     $(".esc").hide();
+  }
+});
 });
 
