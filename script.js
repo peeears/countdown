@@ -10,6 +10,9 @@ $( ".num" ).click(function(e) {
   let index=$(this).children("a").attr("id");
    // console.log(srclist[index]);
   $(".vd").attr('src', srclist[index]);
-  $(".backgroundVD").show();
+  $(".backgroundVD").fadeIn();
+  $('video').on('ended',function(){
+      $(".backgroundVD").fadeOut();
+    });
 });
 
