@@ -96,6 +96,11 @@ a:visited {
   border: 1.5px solid #ffffff;
 }
 
+.esc:hover {
+  color: black;
+  border: 1.5px solid #000000;  
+}
+
 @-webkit-keyframes blink {
   0% {
     opacity: 1;
