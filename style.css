@@ -6,7 +6,9 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -20,100 +22,105 @@ body {
 }
 
 /* images and videos max out at full width */
-.backgroundVD{
-  width:100%;
-  display:none;
+.backgroundVD {
+  width: 100%;
+  display: none;
 }
 
 img,
 video {
-   max-width: 70%;
+  max-width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0;
   height: auto;
+  z-index: -1000;
 }
 
-.number{
+.number {
   font-family: Arial, sans-serif;
-  color: #FD6701;
-  top:-55%;
-  left:42%;
-/*   transform: translate(-25%, -25%); */
+  color: #fd6701;
+  top: -55%;
+  left: 42%;
+  /*   transform: translate(-25%, -25%); */
   position: fixed;
   font-size: 30rem;
-  z-index:100;
+  z-index: 100;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: white;
   text-decoration: none;
   cursor: auto;
 }
 
-.countdowns{
+.countdowns {
   text-align: center;
 }
 
-.num{
+.num {
   color: white;
 }
 
 .hide {
-  color:black;
+  color: black;
 }
-    
+
 .num:hover + .hide {
   display: block;
   color: white;
 }
 
-.esc{
+.esc {
   color: darkgray;
   position: fixed;
-  padding:0.5rem;
-  left:0;
-  top:0;
-  
+  padding: 0.5rem;
+  left: 0;
+  top: 0;
 }
 
 @-webkit-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @-moz-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @-o-keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #imgcontainer {
   position: fixed;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-100%, -40%);
-/*     -webkit-animation: blink 1s;
+  /*     -webkit-animation: blink 1s;
     -webkit-animation-iteration-count: infinite;
     -moz-animation: blink 1s;
     -moz-animation-iteration-count: infinite;
